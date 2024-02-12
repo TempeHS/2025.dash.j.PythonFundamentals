@@ -1,9 +1,7 @@
-answer = input("whats the answer to great question ? ")
-answer = int(answer)
-if answer == 42:
-    print("yes")
-else print("no")
-if answer == ("fourtey two"):
-    print("yes")
-else:
-    print("no")
+life = input("whats the answer for the great question of life ")
+
+match life:
+    case "42" | "forty-two" | "forty two":
+        print("yes")
+    case _:
+        print("no")
