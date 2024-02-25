@@ -1,6 +1,14 @@
 def ComputerCHOICE():
     return "rock"
 
+
+def games_played():
+    games_played = 0
+    while game_played <= 2:
+        game_played = games_played + 1
+    options = "rock"
+
+
 def playerCHOICE():
     playerCHOICE = input("please choose rock, paper, or scissors  ").lower()
     if playerCHOICE == ComputerCHOICE():

@@ -1,5 +1,5 @@
 def remove_vowels(tweet):
-    vowels = "aeiouAeiou"
+    vowels = "aeiouAEIOU"
     without_vowels = ""
     for char in tweet:
         if char not in vowels:
