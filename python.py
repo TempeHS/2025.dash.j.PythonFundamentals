@@ -4,9 +4,7 @@ def ComputerCHOICE():
 
 def games_played():
     games_played = 0
-    while game_played <= 2:
-        game_played = games_played + 1
-    options = "rock"
+    while game_played > 3:
 
 
 def playerCHOICE():
@@ -19,6 +17,6 @@ def playerCHOICE():
         print("you won!!!")
     else:
         print("error please re run code")
-
+game_played = games_played + 1
 
 playerCHOICE()
