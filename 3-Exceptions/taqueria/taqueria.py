@@ -15,23 +15,22 @@ def main():
     print("the menu is,", end="")
     print(menu)
 
-
-try:
-    while True:
-        item = (
-            input(
-                "please choose what items you would like,(control d to finish ordering) "
+    try:
+        while True:
+            item = (
+                input(
+                    "please choose what items you would like,(control d to finish ordering) "
+                )
+                .strip()
+                .title()
             )
-            .strip()
-            .title()
-        )
-        if item in menu:
-            total_cost += menu[item]
-            print(f"total cost is ${total_cost}")
-    else:
-        print("invalid item")
-except EOFError:
-    print(f"order complete your total is{total_cost}")
+            if item in menu:
+                total_cost += menu[item]
+                print(f"total cost is ${total_cost}")
+        else:
+            print("invalid item")
+    except EOFError:
+        print(f"order complete your total is{total_cost}")
 
 
 main()
