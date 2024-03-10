@@ -27,8 +27,8 @@ def main():
             if item in menu:
                 total_cost += menu[item]
                 print(f"total cost is ${total_cost}")
-        else:
-            print("invalid item")
+            else:
+                print("invalid item")
     except EOFError:
         print(f"order complete your total is{total_cost}")
 
